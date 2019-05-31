@@ -1,5 +1,4 @@
-##
-Pig to Paradise - a 3D mobile game
+### Pig to Paradise - a 3D mobile game
 
 Player needs to memorize a route and follow it when the path is gone
 
