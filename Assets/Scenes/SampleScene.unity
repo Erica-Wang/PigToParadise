@@ -257,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 30, y: 40, z: 5}
+  m_LocalPosition: {x: 30, y: 40, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1232793207}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81422ca14563b4ed9bf674e6e05f24a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfMoves: 10
+  numberOfMoves: 7
   path: {fileID: 1035428667167306925, guid: 0b6b911bd778341afabf9919c9cb43af, type: 3}
   PathWall: {fileID: 7407025084696972450, guid: 1eb88554f798547d4ade57009aa3b737,
     type: 3}
@@ -732,8 +732,8 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2002087520}
   m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
+  m_Alpha: 0
+  m_Interactable: 0
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
 --- !u!1 &2031798499

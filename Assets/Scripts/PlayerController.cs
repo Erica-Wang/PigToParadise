@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
 
-        GeneratePath();
+        GeneratePath(7,7);
         ShowPath();
     }
 
@@ -78,16 +78,15 @@ public class PlayerController : MonoBehaviour
             onStep++;
             if (onStep >= position[0].Count - 1)
             {
-                ResultCanvas.alpha = 1f;
-                ResultCanvas.interactable = true;
-                ResultText.text = "Win";
+                GeneratePath((int)position[0][position[0].Count-1],(int)position[1][position[1].Count-1]);
+                ShowPath();
             }
-            //Start();
+
         }
     }
 
 
-    private void GeneratePath()
+    private void GeneratePath(int StartX, int StartY)
     {
 
         onStep = 0;
@@ -96,10 +95,10 @@ public class PlayerController : MonoBehaviour
         position[0] = new ArrayList();
         position[1] = new ArrayList();
 
-        position[0].Add(7);
-        position[1].Add(7);
+        position[0].Add(StartX);
+        position[1].Add(StartY);
         bool[,] been = new bool[15, 15];
-        been[7, 7] = true;
+        been[StartX, StartY] = true;
 
         for (int i = 1; i < numberOfMoves; i++)
         {
